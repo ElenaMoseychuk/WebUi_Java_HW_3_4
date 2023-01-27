@@ -37,14 +37,9 @@ public class CheckProfile {
         driver.quit();
     }
 
-    public static CheckProfile getMyPhotos() {
-        if (checkProfile == null) checkProfile = new CheckProfile();
-        return checkProfile;
-
-    }
-
     public static CheckProfile getCheckProfile() {
-        if(checkProfile==null) checkProfile = new CheckProfile();
+        if(checkProfile == null) checkProfile = new CheckProfile();
         return checkProfile;
+
     }
 }
