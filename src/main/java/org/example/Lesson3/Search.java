@@ -28,7 +28,7 @@ public class Search {
 
         WebElement closeCookie = (new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='cookie-notification__button']"))));
         closeCookie.click();
-        WebElement webElement1 = driver.findElement(By.xpath("/symbol/path[1]"));
+        WebElement webElement1 = driver.findElement(By.cssSelector(".flaticon--search > path:nth-child(1)"));
         webElement1.click();
         WebElement webElement2 = driver.findElement(By.id("//*[@id=\"SearchText\"]"));
         webElement2.sendKeys("Кино");
